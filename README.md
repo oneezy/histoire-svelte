@@ -19,3 +19,9 @@ pnpm story:dev
 pnpm story:build
 pnpm story:preview
 ```
+
+## Cleanup
+To remove `node_modules` and `build` files
+```
+pnpm clean
+```
