@@ -3,12 +3,17 @@
   import BaseButton from './BaseButton.svelte'
 
   export let Hst
+  const source = `
+  <BaseButton>
+    Click me!
+  </BaseButton>
+`
 
   let disabled = false
   let size = 'medium'
 </script>
   
-<Hst.Story title="BaseButton">
+<Hst.Story title="BaseButton" {source}>
   <BaseButton {disabled} {size} on:click={event => hstEvent('click', event)}>
     Click me!
   </BaseButton>

@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "story:dev": "histoire dev",
+    "story:dev": "histoire dev --port 6006",
     "story:build": "histoire build",
-    "story:preview": "histoire preview --port 4567",
+    "story:preview": "histoire preview --port 6006",
+    "dev": "start-server-and-test story:dev http://127.0.0.1:6006/",
     "ci": "start-server-and-test story:preview http://localhost:4567/ test",
     "test": "cypress run",
     "test:dev": "cypress open --config baseUrl=http://localhost:6006",
