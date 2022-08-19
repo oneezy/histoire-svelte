@@ -14,10 +14,8 @@
     "clean": "git clean -fXd"
   },
   "type": "module",
-  "dependencies": {
-    "svelte": "^3.49.0"
-  },
   "devDependencies": {
+    "svelte": "^3.49.0",
     "@histoire/plugin-svelte": "^0.10.0",
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
     "cypress": "^10.4.0",
