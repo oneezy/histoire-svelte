@@ -6,11 +6,6 @@
     "story:dev": "histoire dev --port 6006",
     "story:build": "histoire build",
     "story:preview": "histoire preview --port 6006",
-    "dev": "start-server-and-test story:dev http://127.0.0.1:6006/",
-    "ci": "start-server-and-test story:preview http://localhost:4567/ test",
-    "test": "cypress run",
-    "test:dev": "cypress open --config baseUrl=http://localhost:6006",
-    "test:examples": "pnpm run story:build && pnpm run ci",
     "clean": "git clean -fXd"
   },
   "type": "module",
@@ -18,9 +13,7 @@
     "svelte": "^3.49.0",
     "@histoire/plugin-svelte": "^0.10.0",
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
-    "cypress": "^10.4.0",
     "histoire": "^0.10.0",
-    "start-server-and-test": "^1.14.0",
     "svelte-preprocess": "^4.10.7",
     "vite": "^3.0.5"
   }
